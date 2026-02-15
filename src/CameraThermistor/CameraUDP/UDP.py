@@ -118,8 +118,8 @@ while True:
         if current_time - st.session_state.last_seen < 1.0:
             status_place.success(f"● ONLINE | Packets: {st.session_state.packet_count}")
         
-        m_placeholders[0].metric("Th 1 (Camera)", f"{vals[3]}°C")
-        m_placeholders[1].metric("Th 2 (Freezer)", f"{vals[4]}°C")
+        m_placeholders[0].metric("Th 1 (Camera1)", f"{vals[3]}°C")
+        m_placeholders[1].metric("Th 2 (Camera2)", f"{vals[4]}°C")
         m_placeholders[2].metric("Elapsed", elapsed_val)
         m_placeholders[3].metric("BME Temp", f"{vals[0]}°C")
         m_placeholders[4].metric("Humidity", f"{vals[1]}%")
